@@ -4,29 +4,32 @@ import br.senai.sp.jandira.model.Jogo;
 
 public class JogoRepository {
 
-	private Jogo[] meusjogos;
+	private Jogo[] jogosgravados;
 
 	public JogoRepository() {
-		meusjogos = new Jogo[20];
+		jogosgravados = new Jogo[20];
 
 	}
 
 	public JogoRepository(int quantidadejogos) {
-		meusjogos = new Jogo[quantidadejogos];
+		jogosgravados = new Jogo[quantidadejogos];
 	}
 
 	public void gravar(Jogo jogo, int posicao) {
-		meusjogos[posicao] = jogo;
+		jogosgravados[posicao] = jogo;
 
 	}
 
 	public Jogo listarJogos(int posicao) {
-		return meusjogos[posicao];
+		return jogosgravados[posicao];
 
 	}
 
 	public Jogo[] listartodos() {
-		return meusjogos;
+		return jogosgravados;
 	}
 
+	public int getTamanho() {
+		return jogosgravados.length;
+	}
 }
