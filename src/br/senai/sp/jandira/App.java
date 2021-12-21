@@ -1,6 +1,6 @@
 package br.senai.sp.jandira;
 
-import br.senai.sp.jandira.ui.FrameCadastro;
+import br.senai.sp.jandira.ui.FrameSoftwareJogos;
 
 public class App {
 	public static void main(String[] args) {
@@ -29,7 +29,7 @@ public class App {
 		 * }
 		 */
 
-		FrameCadastro frame = new FrameCadastro();
+		FrameSoftwareJogos frame = new FrameSoftwareJogos();
 		frame.setVisible(true);
 	}
 }
